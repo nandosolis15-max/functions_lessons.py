@@ -3,11 +3,8 @@
 
 # You should only define the function, you should not call it later.
 
-
-
-
-
-
+def greet():
+    print("Hello world!")
 
 # Create Functions Practice #2
 # Declare a Function: Create a function called welcome that takes a person's name as an argument. This function should print "Welcome {name}!" whenever it is called.
@@ -16,6 +13,10 @@
 
 # Note: Only define the function and create the variable. Do not call the function afterwards.
 
+def welcome(name):
+    print(f"Welcome {name}!")
+
+name = "RoniB"
 
 
 
