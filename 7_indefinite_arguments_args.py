@@ -33,8 +33,25 @@ print(absolute_sum(-10, 5, -3, 7, -2, 6, 7, -8, 9))
 # Indefinite Arguments (*args) Practice #2
 # Create a function called absolute_sum, which takes any number of arguments, and returns the sum of their absolute values (that is, it takes the non-negative values and adds them together, in other words, considers them all - negative and positive - as positive).
 
+def number_attributes(**kwargs):
+    count = 0
+    for key in kwargs:
+        count += 1
+    return count
+
+print(number_attributes(height=180, weight=75, age=30,  eye_color="blue"))
+
+
 # Indefinite Arguments (*args) Practice #3
 # Create a function called personal_numbers that receives, as its first argument, a name, and then an indefinite number of values.
+
+def list_attributes(**kwargs):
+    attributes_list = []
+    for key, value in kwargs.items():
+        attributes_list.append(value)
+    return attributes_list
+print(list_attributes(height=180, weight=75, age=30, eye_color="blue"))
+
 
 # The function should return the following message:
 
